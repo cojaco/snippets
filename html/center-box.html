@@ -1,0 +1,71 @@
+<div class="height-box">
+    <div class="height-box-value" style="padding-top:100%;"></div>
+    <div class="height-content">
+        <!-- make vertikal align -->
+        <div class="v-align-block-wrapper">
+            <div class="v-align-block col-md-4-fix pinktile">
+                <div class="v-align-block-fallback">
+
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- make height -->
+</div>
+
+<style>
+
+   /*  set height  */
+
+    .height-box{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .height-box-value {
+        content: "";
+        display: block;
+        padding-top: 50%; /* height relative to container width*/
+    }
+    .height-content{
+        position:  absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: white;
+        text-align: center;
+        background: #333;
+        color: #fff;
+        background-size: cover;
+    }
+
+    /* center vertical */
+    .v-align-block-wrapper {
+        display: table;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        *position: relative;
+        text-align: left;
+    }
+
+    .v-align-block {
+        display: table-cell;
+        vertical-align: middle;
+        *position: absolute;
+        *top: 50%;
+
+    }
+
+    .v-align-block-fallback {
+        *position: relative;
+        *top: -50%;
+    }
+
+</style>
