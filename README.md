@@ -111,6 +111,8 @@ height: 100%;
 ```
 [Demo](http://htmlpreview.github.io/?https://github.com/cojaco/snippets/blob/master/html/video-wrap.html)
 
+-------------------
+
 ### Call snippets and pass variables
 ```php
 <?php $type = $this->getTyp(); ?>
