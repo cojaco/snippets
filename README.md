@@ -130,7 +130,7 @@ height: 100%;
 
     <?php if (!$id): ?>
         <pre style="text-align: center">
-    <?php echo 'video Id fehlt' ?>
+    <?php echo 'video Id is missing' ?>
 </pre>
     <?php endif ?>
 
@@ -138,7 +138,7 @@ height: 100%;
         <?php $styleHeight = 'padding-bottom: ' . $height . ';'; ?>
     <?php else: ?>
         <pre style="text-align: center">
-<?php echo 'höhenangabe für Video fehlt'; ?>
+<?php echo 'height is missing'; ?>
 </pre>
     <?php endif; ?>
     <?php if ($mtop): ?>
