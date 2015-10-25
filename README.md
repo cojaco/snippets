@@ -81,7 +81,9 @@
     .v-align-block-fallback {
         *position: relative;
         *top: -50%;
-    }
+        padding: 0 10%;
+        text-align: center;
+        }
 
 </style>
 ```
