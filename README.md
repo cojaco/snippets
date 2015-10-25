@@ -11,15 +11,17 @@
 ###Center Content
 ```html
 <div class="height-box">
-    <div class="height-box-value" style="padding-top:100%;"></div>
+    <div class="height-box-value"></div>
     <div class="height-content">
         <!-- make vertikal align -->
         <div class="v-align-block-wrapper">
-            <div class="v-align-block col-md-4-fix pinktile">
+            <div class="v-align-block">
                 <div class="v-align-block-fallback">
 
                     <h2>title</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    At vero eos et accusam et justo duo dolores et ea rebum.</p>
 
                 </div>
             </div>
