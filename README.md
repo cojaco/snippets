@@ -1,13 +1,12 @@
 # snippets
 
 ## CSS
-[Scalable and responsive embeded videos](scalable-and-responsive-embeded-videos)
+[Scalable and responsive embeded videos](#scalable-and-responsive-embeded-videos)
 
 ### Scalable and responsive embeded videos
 ```html
 <div class="video-wrap">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe src="https://player.vimeo.com/video/1084537?color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/1084537?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <style>
