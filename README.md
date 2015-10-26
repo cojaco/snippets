@@ -5,8 +5,13 @@
 
 [Center Content](#center-content)
 
+## Javascript
+[Crossbrowser Viewport width](#crossbrowser-viewport-width)
+
 ## Magento
 [Call snippets and pass variables](#call-snippets-and-pass-variables)
+
+
 
 
 ###Center Content
@@ -113,6 +118,21 @@ height: 100%;
 </style>
 ```
 [Demo](http://htmlpreview.github.io/?https://github.com/cojaco/snippets/blob/master/html/video-wrap.html)
+
+-------------------
+
+### Crossbrowser Viewport width
+
+embed /javascript/viewportSize-min.js
+
+```html
+<script type="text/javascript">
+    var width = viewportSize.getWidth();
+    var height = viewportSize.getHeight();
+</script>
+```
+
+Original: https://github.com/tysonmatanich/viewportSize
 
 -------------------
 
