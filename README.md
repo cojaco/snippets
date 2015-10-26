@@ -9,7 +9,7 @@
 [Crossbrowser Viewport width](#crossbrowser-viewport-width)
 
 ## Magento
-[Call snippets and pass variables](#call-snippets-and-pass-variables)
+[Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
 
 
 ### Scalable and responsive embeded videos
@@ -135,7 +135,7 @@ Original: https://github.com/tysonmatanich/viewportSize
 
 -------------------
 
-### Call snippets and pass variables
+### Call snippets and pass variables in Magento
 ```php
 <?php $type = $this->getTyp(); ?>
 <?php $id = $this->getId(); ?>
