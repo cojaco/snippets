@@ -6,7 +6,8 @@
 [Center Content](#center-content)
 
 ## Javascript
-[Crossbrowser Viewport width](#crossbrowser-viewport-width)
+[Crossbrowser Viewport width](#crossbrowser-viewport-width)  
+[ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
 
 ## Magento
 [Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
@@ -134,6 +135,62 @@ embed /javascript/viewportSize-min.js
 Original: https://github.com/tysonmatanich/viewportSize
 
 -------------------
+
+### ios triggering resize events by scrolling
+
+```js
+jQuery(document).ready(function($) {
+
+    // Store the window width
+    var windowWidth = $(window).width();
+
+    // Resize Event
+    $(window).resize(function(){
+
+        // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+        if ($(window).width() != windowWidth) {
+
+            // Update the window width for next time
+            windowWidth = $(window).width();
+
+            // Do stuff here
+
+        }
+
+        // Otherwise do nothing
+
+    });
+
+});
+```
+
+Original: http://stackoverflow.com/a/24212316
+
+-------------------
+
+jQuery(document).ready(function($) {
+
+    // Store the window width
+    var windowWidth = $(window).width();
+
+    // Resize Event
+    $(window).resize(function(){
+
+        // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+        if ($(window).width() != windowWidth) {
+
+            // Update the window width for next time
+            windowWidth = $(window).width();
+
+            // Do stuff here
+
+        }
+
+        // Otherwise do nothing
+
+    });
+
+});
 
 ### Call snippets and pass variables in Magento
 ```php
