@@ -6,7 +6,8 @@
 [Center Content](#center-content)
 
 ## Javascript
-[Crossbrowser Viewport width](#crossbrowser-viewport-width)  
+[Crossbrowser viewport width](#crossbrowser-viewport-width)  
+[Crossbrowser responsive imageges](#crossbrowser-responsive-imageges)  
 [ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
 
 ## Magento
@@ -136,6 +137,21 @@ Original: https://github.com/tysonmatanich/viewportSize
 
 -------------------
 
+### Crossbrowser responsive imageges  
+
+```html
+<picture>
+  <source srcset="examples/images/extralarge.jpg" media="(min-width: 1000px)">
+  <source srcset="examples/images/art-large.jpg" media="(min-width: 800px)">
+  <img srcset="examples/images/art-medium.jpg" alt="…">
+</picture>
+```
+
+Project Site: http://scottjehl.github.io/picturefill/  
+Github: https://github.com/scottjehl/picturefill  
+
+-------------------
+
 ### ios triggering resize events by scrolling
 
 ```js
@@ -143,6 +159,7 @@ jQuery(document).ready(function($) {
 
     // Store the window width
     var windowWidth = $(window).width();
+    // or var windowWidth = viewportSize.getWidth(); if you use the plugin from above
 
     // Resize Event
     $(window).resize(function(){
