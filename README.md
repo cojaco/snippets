@@ -11,9 +11,9 @@
 [ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
 
 ## Magento
-[Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
-[Call custom variables](#call-custom-variables)
-[Call blocks with ifconfig](#call-blocks-with-ifconfig)
+[Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)\s\s
+[Call custom variables](#call-custom-variables)\s\s
+[Call blocks with ifconfig](#call-blocks-with-ifconfig)\s\s
 
 ### Scalable and responsive embeded videos
 ```html
