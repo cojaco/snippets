@@ -12,11 +12,7 @@
 
 ## Magento
 [Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
-
-
 [Call custom variables](#call-custom-variables)
-
-
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
 
