@@ -12,6 +12,8 @@
 
 ## Magento
 [Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
+[Call custom variables](#call-custom-variables)
+[Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
 
 ### Scalable and responsive embeded videos
@@ -235,4 +237,44 @@ Original: http://stackoverflow.com/a/24212316
 ```
 Call the Snippet: {{block type="core/template" id="1084537" height="56.2%" mbottom="220px" bg="#fff" mtop="0px" template="snippets/fullwidthvid.phtml"  }}
 
+-------------------
+
+### Call custom variables
+
+Plain Value per Store
+```php
+<?php
+$value = Mage::getModel('core/variable')
+    ->setStoreId(Mage::app()->getStore()->getId())
+    ->loadByCode('variable_code')
+    ->getValue('text');
+?>
+```
+Html Value per Store
+```php
+<?php
+$value = Mage::getModel('core/variable')
+    ->setStoreId(Mage::app()->getStore()->getId())
+    ->loadByCode('variable_code')
+    ->getValue('html');
+?>
+```
+
+http://stackoverflow.com/a/6222511
+
+-------------------
+
+### Call blocks with ifconfig
+
+```xml
+<block type="core/template" name="the.name">
+            <action method="setTemplate" ifconfig="module/general/enable">
+                <template>snippets/your_snippet.phtml</template>
+            </action>
+        </block>
+```
+
+
+
+-------------------
 
