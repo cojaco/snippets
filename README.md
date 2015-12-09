@@ -15,8 +15,6 @@
 [Call custom variables](#call-custom-variables)
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
-
-
 ### Scalable and responsive embeded videos
 ```html
 <div class="video-wrap">
