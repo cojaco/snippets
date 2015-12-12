@@ -5,10 +5,17 @@
 
 [Center Content](#center-content)
 
+[Zoom layout](#zoom-layout)
+
 ## Javascript
-[Crossbrowser viewport width](#crossbrowser-viewport-width)  
-[Crossbrowser responsive imageges](#crossbrowser-responsive-imageges)  
+[Crossbrowser viewport width](#crossbrowser-viewport-width)
+
+[Crossbrowser responsive imageges](#crossbrowser-responsive-imageges)
+
 [ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
+
+[Importing CSS Breakpoints Into Javascript] (#importing_css_breakpoints_into_javascrip)
+
 
 ## Magento
 [Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
@@ -17,6 +24,16 @@
 
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
+### Zoom layout
+Note if you zoom a container with transform: scale(0.2); the Parents height needs to be set to the new height or you can try to set it to 0.
+eg:
+```css
+html {height: 0; min-height:0; }
+body {transform: scale(0.2);}
+```
+should work for IE9+
+
+If you need to do this kind of stuff in older IEs try css property zoom.
 
 ### Scalable and responsive embeded videos
 ```html
@@ -186,6 +203,14 @@ jQuery(document).ready(function($) {
 ```
 
 Original: http://stackoverflow.com/a/24212316
+
+-------------------
+
+### Importing CSS Breakpoints Into Javascript
+
+Interessting concept
+
+http://codepen.io/mherchel/pen/gbygBd
 
 -------------------
 
