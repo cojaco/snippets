@@ -153,6 +153,7 @@ height: 100%;
 [Demo](http://htmlpreview.github.io/?https://github.com/cojaco/snippets/blob/master/html/center-box.html)
 
 -------------------
+## Javascript / Jquery
 
 ### Crossbrowser Viewport width
 
@@ -224,6 +225,7 @@ Interessting concept
 http://codepen.io/mherchel/pen/gbygBd
 
 -------------------
+## Magento
 
 ### Call snippets and pass variables in Magento
 ```php
@@ -315,6 +317,7 @@ http://stackoverflow.com/a/6222511
 
 
 -------------------
+## Processwire
 
 ### Frontendlogin resources
 Frontend Login:
