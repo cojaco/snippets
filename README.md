@@ -7,6 +7,8 @@
 
 [Zoom layout](#zoom-layout)
 
+[Responsive Patterns](#responsive-patterns)
+
 ## Javascript
 [Crossbrowser viewport width](#crossbrowser-viewport-width)
 
@@ -14,7 +16,7 @@
 
 [ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
 
-[Importing CSS Breakpoints Into Javascript] (#importing_css_breakpoints_into_javascrip)
+[Importing CSS Breakpoints Into Javascript] (#importing-css-breakpoints-into-javascrip)
 
 
 ## Magento
@@ -23,6 +25,12 @@
 [Call custom variables](#call-custom-variables)
 
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
+
+
+##Processwire
+[Frontendlogin resources](#frontendlogin-resources)
+
+
 
 ### Zoom layout
 Note if you zoom a container with transform: scale(0.2); the Parents height needs to be set to the new height or you can try to set it to 0.
@@ -34,6 +42,9 @@ body {transform: scale(0.2);}
 should work for IE9+
 
 If you need to do this kind of stuff in older IEs try css property zoom.
+
+
+Responsive Patterns
 
 ### Scalable and responsive embeded videos
 ```html
@@ -305,3 +316,12 @@ http://stackoverflow.com/a/6222511
 
 -------------------
 
+### Frontendlogin resources
+Frontend Login:
+https://processwire.com/talk/topic/1716-integrating-a-member-visitor-login-form/#entry15919
+Module: FrontendUser:
+http://modules.processwire.com/modules/frontend-user/
+https://processwire.com/talk/topic/9811-frontenduser-login-logout-and-register-users-members/
+
+Restrict User from Backend View
+https://processwire.com/talk/topic/11122-delete-and-edit-pages-via-api/#entry104072
