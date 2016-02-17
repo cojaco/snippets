@@ -26,6 +26,8 @@
 
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
+[Find and call $this](#find-and-call-this)
+
 
 ##Processwire
 [Frontendlogin resources](#frontendlogin-resources)
@@ -312,6 +314,22 @@ http://stackoverflow.com/a/6222511
                 <template>snippets/your_snippet.phtml</template>
             </action>
         </block>
+```
+
+
+
+-------------------
+
+### Find and call $this
+
+e.g. in media.phtml
+```php
+print_r(get_class($this));
+```
+
+Than in a new phtml you can go like this:
+```php
+$mediathis = new Mage_Catalog_Block_Product_View_Media();
 ```
 
 
