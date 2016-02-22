@@ -18,6 +18,8 @@
 
 [Importing CSS Breakpoints Into Javascript] (#importing-css-breakpoints-into-javascrip)
 
+[Remove/add value onfocus/onblur if empty in jquery, input field] (#remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field)
+
 
 ## Magento
 [Call snippets and pass variables-in-magento](#call-snippets-and-pass-variables-in-magento)
@@ -219,6 +221,39 @@ jQuery(document).ready(function($) {
 Original: http://stackoverflow.com/a/24212316
 
 -------------------
+
+### Remove/add value onfocus/onblur if empty in jquery, input field
+
+####Html
+```html
+<input id="email" name="email" type="text" value="Write your email here" />
+```
+
+
+####Jquery
+```js
+$('#email')
+  .on('focus', function(){
+      var $this = $(this);
+      if($this.val() == 'Write your email here'){
+          $this.val('');
+      }
+  })
+  .on('blur', function(){
+      var $this = $(this);
+      if($this.val() == ''){
+          $this.val('Write your email here');
+      }
+  });​
+```
+
+Original: http://stackoverflow.com/questions/7377571/remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field
+
+Demo: http://jsfiddle.net/Shef/aujqU/
+
+-------------------
+
+
 
 ### Importing CSS Breakpoints Into Javascript
 
