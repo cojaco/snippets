@@ -226,30 +226,29 @@ Original: http://stackoverflow.com/a/24212316
 
 ####Html
 ```html
-<input id="email" name="email" type="text" value="Write your email here" />
+<input id="email" class="blurfocus" name="email" type="text" value="Write your email here" />
 ```
 
 
 ####Jquery
 ```js
-$('#email')
-  .on('focus', function(){
-      var $this = $(this);
-      if($this.val() == 'Write your email here'){
-          $this.val('');
-      }
-  })
-  .on('blur', function(){
-      var $this = $(this);
-      if($this.val() == ''){
-          $this.val('Write your email here');
-      }
-  });​
+$('input.blurfocus').on('focus', function() {
+            // On first focus, check to see if we have the default text saved
+            // If not, save current value to data()
+            if (!$(this).data('defaultText')) $(this).data('defaultText', $(this).val());
+
+            // check to see if the input currently equals the default before clearing it
+            if ($(this).val()==$(this).data('defaultText')) $(this).val('');
+        });
+        $('input.blurfocus').on('blur', function() {
+            // on blur, if there is no value, set the defaultText
+            if ($(this).val()=='') $(this).val($(this).data('defaultText'));
+        });
 ```
 
-Original: http://stackoverflow.com/questions/7377571/remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field
+Original: http://stackoverflow.com/a/13182951
 
-Demo: http://jsfiddle.net/Shef/aujqU/
+Demo: http://jsfiddle.net/hhDwW/
 
 -------------------
 
