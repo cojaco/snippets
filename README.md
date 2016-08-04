@@ -28,6 +28,8 @@
 
 [Call blocks with ifconfig](#call-blocks-with-ifconfig)
 
+[Product as Frontpage] (#product-as-frontpage)
+
 [Find and call $this](#find-and-call-this)
 
 
@@ -174,7 +176,7 @@ Original: https://github.com/tysonmatanich/viewportSize
 
 -------------------
 
-### Crossbrowser responsive imageges  
+### Crossbrowser responsive imageges
 
 ```html
 <picture>
@@ -184,8 +186,8 @@ Original: https://github.com/tysonmatanich/viewportSize
 </picture>
 ```
 
-Project Site: http://scottjehl.github.io/picturefill/  
-Github: https://github.com/scottjehl/picturefill  
+Project Site: http://scottjehl.github.io/picturefill/
+Github: https://github.com/scottjehl/picturefill
 
 -------------------
 
@@ -350,7 +352,13 @@ http://stackoverflow.com/a/6222511
         </block>
 ```
 
+-------------------
 
+### Product as Frontpage
+
+Under Configuration Web Default Pages, set the Default Web URL to catalog/product/view/id/2
+
+http://stackoverflow.com/a/13041212
 
 -------------------
 
