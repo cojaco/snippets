@@ -369,7 +369,7 @@ http://stackoverflow.com/a/13041212
 
 in:
 template/catalog/product/view/type/options/configurable.phtml
-
+```php
 <script type="text/javascript">
     //<![CDATA[
 
@@ -430,7 +430,7 @@ template/catalog/product/view/type/options/configurable.phtml
 
     //]]>
 </script>
-
+```
 -------------------
 
 ### Find and call $this
