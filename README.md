@@ -1,24 +1,23 @@
 # snippets
 
 ## CSS
+[Zoom layout](#zoom-layout)
+
 [Scalable and responsive embeded videos](#scalable-and-responsive-embeded-videos)
 
 [Center Content](#center-content)
 
-[Zoom layout](#zoom-layout)
-
-[Responsive Patterns](#responsive-patterns)
 
 ## Javascript
 [Crossbrowser viewport width](#crossbrowser-viewport-width)
 
 [Crossbrowser responsive imageges](#crossbrowser-responsive-imageges)
 
-[ios_triggering_resize_events_by_scrolling] (#ios-triggering-resize-events-by-scrolling)
+[ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
 
-[importing_css_breakpoints_into_javascript] (#importing-css-breakpoints-into-javascrip)
+[Remove/add value onfocus/onblur if empty in jquery, input field] (#removeadd-value-onfocusonblur-if-empty-in-jquery-input-field)
 
-[remove/add_value_onfocus_onblur_if_empty_in_jquery_input_field] (#remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field)
+[Importing CSS Breakpoints Into Javascript] (#importing-css-breakpoints-into-javascript)
 
 
 ## Magento
@@ -33,6 +32,8 @@
 [Find selected config child simple product](#find-selected-config-child-simple-product)
 
 [Find and call $this](#find-and-call-this)
+
+Check if Frontend User is logged in as admin(#check_if_frontend_user_is_logged_in_as_admin)
 
 
 
@@ -362,6 +363,41 @@ http://stackoverflow.com/a/6222511
 Under Configuration Web Default Pages, set the Default Web URL to catalog/product/view/id/2
 
 http://stackoverflow.com/a/13041212
+
+-------------------
+
+### Check if Frontend User is logged in as admin
+
+```php
+//check if adminhtml cookie is set
+if(array_key_exists('adminhtml', $_COOKIE)){
+    //get session path and add dir seperator and content field of cookie as data name with magento "sess_" prefix
+    $sessionFilePath = Mage::getBaseDir('session').DS.'sess_'.$_COOKIE['adminhtml'];
+    //write content of file in var
+    $sessionFile = file_get_contents($sessionFilePath);
+
+    //save old session
+    $oldSession = $_SESSION;
+    //decode adminhtml session
+    session_decode($sessionFile);
+    //save session data from $_SESSION
+    $adminSessionData = $_SESSION;
+    //set old session back to current session
+    $_SESSION = $oldSession;
+
+    if(array_key_exists('user', $adminSessionData['admin'])){
+        //save Mage_Admin_Model_User object in var
+        $adminUserObj = $adminSessionData['admin']['user'];
+        echo 'ADMIN USER IS LOGGED IN';
+    }
+    else
+    {
+        echo 'ADMIN USER IS NOT LOGGED IN';
+   }
+}
+```
+
+http://stackoverflow.com/a/25625562
 
 -------------------
 
