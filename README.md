@@ -33,7 +33,7 @@
 
 [Find and call $this](#find-and-call-this)
 
-[Check if Frontend User is logged in as admin](#check_if_frontend_user_is_logged_in_as_admin)
+[Check if Frontend User is logged in as admin](#check-if-frontend-user-is-logged-in-as-admin)
 
 
 
