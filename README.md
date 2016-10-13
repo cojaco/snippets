@@ -14,11 +14,11 @@
 
 [Crossbrowser responsive imageges](#crossbrowser-responsive-imageges)
 
-[ios triggering resize events by scrolling] (#ios-triggering-resize-events-by-scrolling)
+[ios_triggering_resize_events_by_scrolling] (#ios-triggering-resize-events-by-scrolling)
 
-[Importing CSS Breakpoints Into Javascript] (#importing-css-breakpoints-into-javascrip)
+[importing_css_breakpoints_into_javascript] (#importing-css-breakpoints-into-javascrip)
 
-[Remove/add value onfocus/onblur if empty in jquery, input field] (#remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field)
+[remove/add_value_onfocus_onblur_if_empty_in_jquery_input_field] (#remove-add-value-onfocus-onblur-if-empty-in-jquery-input-field)
 
 
 ## Magento
